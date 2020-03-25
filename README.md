@@ -1,5 +1,3 @@
-# Css Practice
- Practice S5
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,23 +9,33 @@
 
 	<div id="wrapper">
 		<div id="orange"></div>
+
 		<div id="black"></div>
+		<div id="displayinline">
+						
+						<div id="blue"></div>
+
+		</div>
+						<ul>
+								<li>	<div id="purple1"></div> 	</li>
+								<li>	<div id="red"></div> 	</li>
+								<li>	<div id="pink"></div>	</li>
+						</ul>
+
 		
-			<div id="blue"></div>
-				<ul>
-					<li>	<div id="purple1"></div> 	</li>
-					<li>	<div id="purple2"></div> 	</li>
-					<li>	<div id="purple3"></div>	</li>
-			</ul>
 	<center>
 		<div id="lastbox"></div>
 	</center>
 	
 
-	</div>	
+	</div>
+
+		
+	
 </body>
 </html>
 
+css:
 #wrapper{
 	width: 1200px;
 	margin: 50px auto;
@@ -36,40 +44,71 @@
 	height: 300px;
 	width: 1200px;
 	background: orange;
-position: relative;
+	position: relative;
+
+
 }
 #black{
 	height: 250px;
 	width: 400px;
 	background: black;
 	position: absolute;
-	right: 20px;
-	top:20px;
-		margin: 50px auto;
-	
+	top:75px;
+	bottom: 70px;
+	right: 150px;
+}
+#displayinline{
+	display: inline-block;
 
-	right: 20px;
-	top:20px;
 }
 #blue{
-	height: 550px;
-	width: 390px;
-	display: inline-block;
-	margin: auto;
+	width: 550px;
+	height: 390px;
 	background: blue;
+	position: relative;
+	top: 40px;
+	
+	
 }
-#purple1, #purple2, #purple3{
-	height: 150px;
-	width: 590px;
+ul{
+
+}
+#purple1{
+	height: 110px;
+	width: 610px;
 	display: inline-block;
+	background: purple;
+	 position: absolute;
+	 top: 390px;
+	 left: 700px;
+
+}
+li{ list-style-type: none; }
+
+#red{
+	height: 110px;
+	width: 610px;
+	position: absolute;
+	 top: 530px;
+	 left: 700px;
+	 background: purple;
+
+	
+
+}
+#pink{
+	height: 110px;
+	width: 610px;
+	 position: absolute;
+	 top: 670px;
+	 left: 700px;
 	background: purple;
 
 }
-
-
 #lastbox{
-	height: 400px;
+	height: 300px;
 	width: 600px;
 	margin: 0 auto;
+margin-top: 70px;
 	background:green;
 }
