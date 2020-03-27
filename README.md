@@ -1,75 +1,82 @@
-# Css Practice
- Practice S5
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="S5.css">
 <head>
-	<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="BMP.css">
-	<title>Box Model Practice </title>
+	<title>S5 Css Practice</title>
 </head>
-<body>	
-
+<body>
+	<div id="container">
+	<div id="orangebox"></div>
+	<div id="yellowbox"></div>
 	<div id="wrapper">
-		<div id="orange"></div>
-		<div id="black"></div>
-		
-			<div id="blue"></div>
-				<ul>
-					<li>	<div id="purple1"></div> 	</li>
-					<li>	<div id="purple2"></div> 	</li>
-					<li>	<div id="purple3"></div>	</li>
+			
+			<align><div id="bluebox"></div>
+			<ul>
+				
+				<li><div id="purplebox1"></div></li>
+				<li><div id="purplebox2"></div></li>
+				<li><div id="purplebox3"></div></li>
 			</ul>
-	<center>
-		<div id="lastbox"></div>
-	</center>
-	
+		</align>
+	</div>
 
-	</div>	
+	<center> <div id="greenbox"></div> </center>
+
+	</div>
 </body>
 </html>
 
+
+css:
+
+#container{
+	width: 1200px;
+	margin: 0px auto;
+}
+#orangebox{
+	width: 1200px;
+	height:300px;
+	background: orange;
+	position: relative;
+
+}
+
+#yellowbox{
+	width: 450px;
+	height: 230px;
+	background: yellow;
+	position: absolute;
+	right:20px;
+	top:15px;
+	margin-right: 260px;
+	margin-top: 30px;
+
+}
 #wrapper{
 	width: 1200px;
-	margin: 50px auto;
 }
-#orange{
-	height: 300px;
-	width: 1200px;
-	background: orange;
-position: relative;
+#bluebox{
+		width:550px;
+		height: 550px;
+		background: blue;
+		margin-top: 50px;
+		margin-right: 15px;
+		display: inline-block;
 }
-#black{
-	height: 250px;
-	width: 400px;
-	background: black;
-	position: absolute;
-	right: 20px;
-	top:20px;
-		margin: 50px auto;
+li{
+width: 500px;
+height: 500px;
+position: absolute;
+top: 309px;
+right:29px;
+
+margin-right: 300px;
+ list-style-type: none;
 	
 
-	right: 20px;
-	top:20px;
+
 }
-#blue{
-	height: 550px;
-	width: 390px;
+ul{
 	display: inline-block;
-	margin: auto;
-	background: blue;
-}
-#purple1, #purple2, #purple3{
-	height: 150px;
-	width: 590px;
-	display: inline-block;
-	background: purple;
-
-}
-
-
-#lastbox{
-	height: 400px;
-	width: 600px;
-	margin: 0 auto;
-	background:green;
 }
